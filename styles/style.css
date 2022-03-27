@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    height: 200vh;
+    width: 190vh;
+
+    /* Fundo */
+
+    background: linear-gradient(135deg, #afc5f7 , #ced7f7e7);
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 60px;
+    bottom: -60px;
+    position: relative;
+
+}
+
+.navItens li{
+    display: flex;
+    justify-content: center;
+}
+
+.navItens img {
+    max-width: 180px;
+    position: relative;
+}
+
+.container1 {
+    max-width: 1170px;
+    width: 100%;
+    background: #fff;
+    padding: 80px 30px;
+    border-radius: 25px;
+    position: relative;
+    left: 95px;
+    top: 90px;
+}
+
+/* */
+
+.container1 .input-box {
+    bottom: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    bottom: 60px;
+    /*
+    right: -70px;
+    */
+}
+
+.swal2-input{
+    height: 250px;
+    width: 500px;
+    font-size: 0.695em;
+}
+
+.container1 .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px  0 12px 0;
+}
+
+.user-details .input-box{
+    margin-bottom:  15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* arquivo css */
+
+.container1 .input-box1 {
+    bottom: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    bottom: 60px;
+    /*
+    right: -70px;
+    */
+}
+
+.user-details .input-box1{
+    margin-bottom:  15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box1 .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box1 input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.5 ease;
+}
+
+/* arquivo css */
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.5 ease;
+}
+
+/* CSS TEXTAREA */
+
+.user-details .input-box textarea{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.5 ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #97b5fd;
+}
+
+.user-details .input-box  textarea:focus,
+.user-details .input-box  textarea:valid{
+    border-color: #97b5fd;
+}
+
+/* CSS TEXTAREA */
+
+/* Button */
+
+form .button{
+    height: 45px;
+    margin: 45px 200px;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    position: relative;
+    background: linear-gradient(135deg, #97b5fd, #97b5fd);
+    bottom: 70px;
+    right: -50px ;
+}
+
+form .button input:hover{
+    background: linear-gradient(-135deg);
+}
+
+/* Button */
+
+/* Barra de Rolagem */
+
+
+/* Fundo que corre */
+::-webkit-scrollbar-track {
+    background-color: #ced7f7e7;
+}
+/* Fundo que corre */
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: #ced7f7e7;
+}
+
+/* Linha que desce */
+::-webkit-scrollbar-thumb {
+    background: #ced7f7e7 ;
+    border-radius: 15px;
+}
+/* Linha que desce*/

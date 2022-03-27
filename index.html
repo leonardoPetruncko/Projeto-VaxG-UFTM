@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VaxG </title>
+
+    <!--  CSS FILES -->
+
+    <link rel="stylesheet" href="styles\style.css">
+
+    <!---->
+
+    <!-- SCRIPT FILES -->
+
+    <script src="scripts\get.js"></script>
+    <script src="scripts\post.js"></script>
+
+    <!---->
+
+</head>
+
+<body>
+
+    <!-- Start -->
+
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+
+     <!-- Nav -->
+
+     <header class="nav">
+
+            <h1>VaxG</h1>
+            <h1>Web Server For Multi-Epitope Vaccine Prediction</h1>
+        <ul class="navItens">
+
+            <li>
+                <img src="images\op2.png" alt="">
+            </li>
+
+        </ul>
+        </header>
+
+     <!-- Container -->
+
+        <div class="container1">
+            <div class="title"></div>
+            <div class="user-details">
+
+                <!-- Text Area I Proteins -->
+ 
+                <div class="input-box">
+                    <span class="details"><b>PROTEINS</b></span>
+                    <textarea style="height:auto!important" class="swal2-input" rows="4" type="text" placeholder="Enter PROTEIN SEQUENCES in FASTA format" required></textarea>
+                </div>
+
+                <!-- Text Area I Proteins -->
+
+
+                <!-- Text Area II Proteins -->
+
+                <div class="input-box">
+                    <span class="details"><b>ADJUVANT</b></span>
+                    <textarea style="height:auto!important" class="swal2-input" rows="4" type="text" placeholder="Enter ADJUVANT SEQUENCE in PLAIN format" required></textarea>
+                </div>
+
+                <!-- Text Area II Proteins -->
+
+
+                <!-- Arquivo Alleles MHCI -->
+
+                 <div class="input-box1">
+                    <label for="file"><b>Alleles MHCI</b></label>
+                    <input id="file" type="file" name="file">
+                </div>
+
+                <!-- Arquivo Alleles MHCI -->
+
+
+                 <!-- Text Number Of Chimeric Models -->
+
+                 <div class="input-box" >
+                    <label for="name"><b>Number Of Chimeric Models</b></label>
+                    <input type="text" name="name" id="name" placeholder=" 1000 " required>
+                </div>
+
+                <!-- Text Number Of Chimeric Models -->
+
+
+                <!-- Arquivo Alleles MHCII -->
+
+                <div class="input-box1">
+                    <label for="file"><b>Alleles MHCII</b></label>
+                    <input id="file" type="file" name="file">
+                </div>
+
+                <!-- Arquivo Alleles MHCII -->
+
+                <!-- Option Size Of MHCI Epitopes -->
+
+                <div class="input-box">
+                    <label for="Size Of MHCI Epitopes"><b>Size Of MHCI Epitopes</b></label>
+                    <select name="Size Of MHCI Epitopes" id="Size Of MHCI Epitopes">
+    
+                        <option value="10">10</option>
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        
+            
+                    </select>
+                </div>
+
+                <!-- Option Size Of MHCI Epitopes -->
+
+
+                <!-- Text MHC I Linker -->
+
+                <div class="input-box">
+                    <label for="name"><b>MHC I Linker</b></label>
+                    <input type="text" name="name" id="name" placeholder=" AAY " required>
+                </div>
+
+                <!-- Text MHC I Linker -->
+
+
+                <!-- Option Size Of MHCII Epitopes -->
+
+                 <div class="input-box">
+                    <label for="Size Of MHCII Epitopes"><b>Size Of MHCII Epitopes</b></label>
+                    <select name="Size Of MHCII Epitopes" id="Size Of MHCII Epitopes">
+    
+                        <option value="15">15</option>
+                        <option value="14">14</option>
+                        <option value="13">13</option>
+                        <option value="12">12</option>
+                        <option value="11">11</option>
+                        
+            
+                    </select>
+                </div>
+
+                <!-- Option Size Of MHCII Epitopes -->
+
+
+                <!-- Text MHC II Linker -->
+
+                <div class="input-box"> 
+                    <label for="name"><b>MHC II Linker</b></label>
+                    <input type="text" name="name" id="name" placeholder=" GPGPG " required>
+                </div>  
+
+                <!-- Text MHC II Linker -->
+
+
+                <!-- Text Email -->
+
+                <div class="input-box" >
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <!-- Text Email -->
+
+
+                <!-- Option Methods for MHCI -->
+
+                <div class="input-box">
+                    <label for="Methods for MHCI"><b>Methods for MHCI</b></label>
+                    <select name="Methods for MHCI" id="Methods for MHCI">
+    
+                        <option value="netmhccons">netmhccons</option>
+                        <option value="ann">ann</option>
+                        <option value="comblib_sidney2008">comblib_sidney2008</option>
+                        <option value="consensus">consensus</option>
+                        <option value="netmhcpan_ba">netmhcpan_ba</option>
+                        <option value="netmhcpan_el">netmhcpan_el</option>
+                        <option value="netmhcstabpan">netmhcstabpan</option>
+                        <option value="pickpocket">pickpocket</option>
+                        <option value="smm">smm</option>
+                        <option value="smmpmbec">smmpmbec</option>
+    
+                    </select>
+                </div>
+
+                <!-- Option Methods for MHCI -->
+
+
+                <!-- Text em branco -->
+
+                <div class="input-box" 
+                    <label for=""> ⠀⠀⠀⠀⠀⠀⠀⠀⠀</label>
+                </div>
+
+                <!-- Text em branco -->
+
+                <!-- Option Methods for MHCII -->
+
+                <div class="input-box">
+                    <label for="Methods for MHCII"><b>Methods for MHCII</b></label>
+                    <select name="Methods for MHCII" id="Methods for MHCII">
+    
+                        <option value="nn_align">nn_align</option>
+                        <option value="consensus">consensus</option>
+                        <option value="netmhciipan">netmhciipan</option>
+                        <option value="smm_align">smm_align</option>
+                        <option value="comblib">comblib</option>
+                        <option value="tepitope">tepitope</option>
+            
+                    </select>
+                </div>
+
+                <!-- Option Methods for MHCII -->
+
+
+            </div>
+            </div>  
+        </div>    
+        
+        <div class="button">
+            <input type="SUBMIT" value="SUBMIT">
+        </div>
+
+
+        </form>
+        
+            <!-- End -->
+</body>
+</html>
